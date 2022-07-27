@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products App</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<style>
+    .theader{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .main-container{
+        position: relative;
+    }
+
+    .section-container{
+        min-height: 80vh;
+    }
+    .footer{
+        text-align: center;
+    }
+    .message{
+        position: absolute;
+        top: 40px;
+        z-index: 10;
+        max-width: 500px;
+    }
+</style>
+<body>
+
+    <div class="main-container">
+        <nav class="navbar bg-primary">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    Products App
+                </a>
+            </div>
+        </nav>
+
+        <div class="container section-container">
+            <div class="app row pt-5" id="app">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Add new Product</h3>
+                        </div>
+                        <div class="card-body">
+                            <form id="form-product" action="">
+                                <div class="form-group">
+                                    <input type="text" name="" id="name" placeholder="Product Name" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="" id="description" placeholder="Product Description" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" step="0.01" name="" id="price" placeholder="Product Price" class="form-control">
+                                </div>
+                                <div class="form-group text-center mt-3">
+                                    <input type="submit" value="Save" class="btn btn-primary">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="theader ">
+                        <h2 class="text-center">Products list</h2> 
+                        <p> Total products:<span class="products-count"> </span></p>
+                    </div>
+                    <table id="table-products">
+                        <!-- <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th colspan="2" class="text-center" >Action</th>
+                        </tr> -->
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>Apple</td>
+                            <td>Apple computer fdfd</td>
+                            <td>1200.00</td>
+                            <td><a href="" class="btn btn-warning btn-sm">Update</a></td>
+                            <td><a href="" class="btn btn-danger btn-sm">Delete</a></td>
+                        </tr> -->
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer container">
+            <p>By: Ary Elivert</p>
+        </div>
+    </div>
+
+    <script src="Index.js"></script>
+</body>
+</html>
